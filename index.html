@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Resume LandingPage</title>
 </head>
@@ -20,13 +21,13 @@
             <h4>mxnuel.</h4>
             <img src="assets/Hamburger Menu.svg" alt="hamburger menu" class="hamburger-icon">
 
-            <ul class="big-devices">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <button>Hire me</button>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i></a></li>
+                <li><a href="#services"><i class="fas fa-code"></i></a></li>
+                <li><a href="#works"><i class="fas fa-briefcase"></i></a></li>
+                <li><a href="#sponsors"><i class="fas fa-handshake"></i></a></li>
+                <!-- <button>Hire me</button> -->
             </ul>
         </nav>
 
@@ -37,23 +38,16 @@
                     <div class="hero-content">
                     <h3>Hi, <br> I'm Manuel</h3>
                     <h2>A Web Developer</h2>
-                    <!-- <p>I am a freelance web developer based in Nigeria and i enjoy playing with colors. I love travelling and taking pictures.</p> -->
                 
                     <button>Hire me <i class="fas fa-long-arrow-alt-right"></i></i></button>
                 </div>
-
-                <ul class="big-devices">
-                    <li><a href="https://www.facebook.com/emmanuel.enweremchi.96" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                    <li> <a href="https://www.linkedin.com/in/emmanuel-ngurukwem-b5696b143/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
             </div>
         </div>
 
         <div class="body-container">
             <div class="content clearfix">
-                <h4>My intro</h4>
-                <h2 id="about">About me</h2>
+                <h4 id="about">My intro</h4>
+                <h2>About me</h2>
                 <ul class="status">
                     <li>25 years</li>
                     <li>Nigeria</li>
@@ -103,20 +97,23 @@
             </div>
 
             <div class="projects">
-                <h2>My Projects</h2>
+                <h2 id="works">My Projects</h2>
                 
                 <div class="works">
-                    <a href="https://mxnuel-en.github.io/Snippet-Template-Starter-Files/" target="_blank"><img src="images/snipper.png" alt="snipper site" class="snipper"></a>
-                    <a href="https://mxnuel-en.github.io/spense./" target="_blank"><img src="images/spense8.jpg" alt="spense8" class="spense8"></a>
-                    <a href="https://mxnuel-en.github.io/Gradie-Sign-Up-Starter-Files/" target="_blank"><img src="images/Sign Up.png" alt="sign up page" class="signup"></a>
-                    <a href="https://mxnuel-en.github.io/chat-app-css-illustration-master/" target="_blank" rel="noopener noreferrer"><img src="images/Simple Booking.jpg" alt="simple booking"></a>
+                    <ul>
+                        <li><a href="https://mxnuel-en.github.io/Snippet-Template-Starter-Files/" target="_blank"><img src="images/snipper.png" alt="snipper site" class="snipper"></a></li>
+                        <li><a href="https://mxnuel-en.github.io/spense./" target="_blank"><img src="images/spense8.jpg" alt="spense8" class="spense8"></a></li>
+                        <li><a href="https://mxnuel-en.github.io/Gradie-Sign-Up-Starter-Files/" target="_blank"><img src="images/Sign Up.png" alt="sign up page" class="signup"></a></li>
+                        <li><a href="https://mxnuel-en.github.io/chat-app-css-illustration-master/" target="_blank" rel="noopener noreferrer"><img src="images/Simple Booking.jpg" alt="simple booking"></a></li>
+                    </ul>  
+                    
                 </div>
 
                 <a href="https://github.com/mxnuel-en" target="_blank" rel="noopener noreferrer" class="github">See more <i class="fas fa-long-arrow-alt-right"></i></a>
             </div> 
             
             <div class="sponsors-section">
-                <h2>sponsors</h2>
+                <h2 id="sponsors">Sponsors</h2>
                 <ul class="sponsors">
                     <li><a href="https://zuri.team/" target="_blank" rel="noopener noreferrer"><img src="assets/zurilogo.svg" alt="zuri logo"></a></li>
                     <li><a href="https://www.eduonix.com/" target="_blank" rel="noopener noreferrer"><img src="assets/eduonix.png" alt="eduonix logo"></a></li>
@@ -124,18 +121,20 @@
                 </ul>   
                 
                 <div class="contact">
-                    <h2>Get in Touch</h2>
+                    <div class="form-fill">
+                        <h2>Get in Touch</h2>
 
-                    <form action="#">
-                        <fieldset>
-                            <legend>Contact me</legend>
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="E-mail">
-                            <input type="text" name="subject" id="subjext" placeholder="Subject">
-                            <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
-                            <input type="submit" value="Send Message" id="submit">
-                        </fieldset>
-                    </form>
+                        <form action="#">
+                            <fieldset>
+                                <legend>Contact me</legend>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                                <input type="email" name="email" id="email" placeholder="E-mail">
+                                <input type="text" name="subject" id="subjext" placeholder="Subject">
+                                <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                                <input type="submit" value="Send Message" id="submit">
+                            </fieldset>
+                        </form>
+                    </div>
 
                     <ul>
                         <li>

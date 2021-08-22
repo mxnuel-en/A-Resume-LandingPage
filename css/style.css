@@ -33,7 +33,7 @@ nav img{
     border: 1px solid #3b3b3b;
     padding: 5px;
 }
-.big-devices{
+nav ul{
     display: none;
 }
 .image-container{
@@ -156,7 +156,7 @@ button{
     margin-bottom: 10px;
 }
 .works{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .github{
     padding-left: 5px;
@@ -267,16 +267,98 @@ footer ul{
     justify-content: space-between;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     #wrapper{
+        width: 85%;
         display: grid;
-        grid-template-columns: 50px repeat(2, 1fr);
-        gap: 2rem;
+        grid-template-columns: 45px repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    body{
+        overflow-y: hidden;
     }
     nav{
         display: block;
+        /* justify-content: space-between; */
+        margin: 25px 0;
+        padding: 20px 0;
+        height: 90vh;
+    }
+    nav ul{
+        display: block;
+        margin-top: 150px;
+    }
+    .fa-home, .fa-info-circle, .fa-code, .fa-briefcase, .fa-handshake{
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+    nav h4{
+        display: none;
+    }
+    nav img{
+        padding: 11px;
+        background-color: rgb(233, 104, 104, 0.8);
+        border: none;
+    }
+    .hero-container{
+        padding: 10px 0;
+        margin: 0;
+    }
+    .image-container img{
+        border-radius: 0;
+        height: 97vh;
+    }
+    .hero-content{
+        bottom: 5%;
+        left: 25%;
+    }
+    .body-container{
+        height: 85vh;
+        margin-top: 50px;
+        overflow: scroll;
+        border-radius: 0 5px 5px 0;
+    }
+    .content{
+        margin: 0 0 50px;
+        padding: 30px;
+        border-radius: 0 15px 15px 0;
+    }
+    .projects h2{
+        margin: 25px 0 15px;
+    }
+    .works ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 5px;
+    }
+    .contact{
+        display: flex;
         justify-content: space-between;
     }
+    .contact ul{
+        margin-top: 150px;
+        margin-left: 20px;
+        font-size: .65em;
+        line-height: 1.5em;
+    }
+    .contact ul li:first-child{
+        padding-left: 40px;  
+    }
+    .contact ul li:nth-child(2){
+        padding-left: 40px; 
+    }
+    .contact ul li:last-child{
+        padding-left: 40px; 
+    }
+    input{
+        width: 85%;
+        margin: 0 10px 7px;
+    }
+    textarea{
+        margin: 0 10px;
+    }
+    
 }
 
 
