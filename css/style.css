@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -267,11 +268,48 @@ footer ul{
     justify-content: space-between;
 }
 
+/* For Tablet view */
+@media (min-width: 768px){
+    .image-container{
+        display: flex;
+        flex-direction: row-reverse;
+        /* margin-right: 30px; */
+    }
+    .image-container img{
+        width: 50%;
+        margin-right: 30px;
+    }
+    .hero-content{
+        color: inherit;
+        text-align: justify;
+        position: static;
+        background: none;
+        box-shadow: none;
+        border-radius: none;
+        align-self: center;
+        margin-right: 30px;
+    }
+    button{
+        margin: 0;
+    }
+    .works ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 5px;
+    }
+    input{
+        width: 180px;
+        margin-left: 15px;
+    }
+}
+
+/* For desktop view */
 @media (min-width: 1024px) {
     #wrapper{
         width: 85%;
         display: grid;
-        grid-template-columns: 45px repeat(2, 1fr);
+        grid-template-columns: 60px repeat(2, 1fr);
         margin: 0 auto;
     }
     body{
@@ -279,14 +317,16 @@ footer ul{
     }
     nav{
         display: block;
-        /* justify-content: space-between; */
+        background-color: #F5EDE9;
         margin: 25px 0;
-        padding: 20px 0;
+        padding: 1px;
         height: 90vh;
+        
     }
     nav ul{
         display: block;
         margin-top: 150px;
+        padding-left: 10px;
     }
     .fa-home, .fa-info-circle, .fa-code, .fa-briefcase, .fa-handshake{
         font-size: 2em;
@@ -299,6 +339,8 @@ footer ul{
         padding: 11px;
         background-color: rgb(233, 104, 104, 0.8);
         border: none;
+        margin-top: 7px;
+        margin-left: 7px;
     }
     .hero-container{
         padding: 10px 0;
@@ -313,7 +355,8 @@ footer ul{
         left: 25%;
     }
     .body-container{
-        margin-top: 50px;
+        margin-top: 30px;
+        height: 90vh;
         overflow: scroll;
         border-radius: 0 5px 5px 0;
     }
